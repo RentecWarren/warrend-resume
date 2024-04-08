@@ -27,20 +27,23 @@
   padding: 6px;
 }
 .navbar a:hover {
-  color: #1520ec;
+  color: #f2f3f7;
+  background-color: #6c6a6a;
+  border-radius: 8px;  
 }
+
 .content {
-  width: 600px;
-  margin: 40px auto;
-  padding: 20px;
+  width: 610px;
+  margin: 10px auto;
+  padding: 10px;
 }
 
 .resume-viewer {
-  padding: 20px;
+  padding: 10px;
   margin: 0 auto;
   width: 600px;
   display: block;
-  box-shadow: 2px 2px 5px #1520ec;
+  box-shadow: 4px 2px 4px #1520ec;
 
 }
 
