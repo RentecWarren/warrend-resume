@@ -3,7 +3,7 @@ import useFetch from './useFetch';
 
 
 const Portfolio = () => {
-  const { data: items, isPending, error } = useFetch('https://00ydn8sj8g.execute-api.us-east-1.amazonaws.com/staging/items');
+  const { data: items, isPending, error } = useFetch('https://00ydn8sj8g.execute-api.us-east-1.amazonaws.com/staging/posts');
 
   return (  
     <nav className="home">

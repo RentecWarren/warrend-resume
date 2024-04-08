@@ -10,11 +10,15 @@ const Create = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const submitMessage = { title, message};
+    const timestamp = Date.now();
+    const randomHex = Math.random().toString(16).slice(2);
+    const id = timestamp.toString(16) + randomHex.replace(/(.{8})/g, "$1-") + "-4";
+
+    const submitMessage = { id, title, message};
 
     setIsPending(true);
 
-    fetch('https://00ydn8sj8g.execute-api.us-east-1.amazonaws.com/staging/items', {
+    fetch('https://00ydn8sj8g.execute-api.us-east-1.amazonaws.com/staging/posts', {
       method: 'POST',
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(submitMessage)

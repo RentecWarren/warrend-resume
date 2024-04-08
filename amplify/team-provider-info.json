@@ -16,10 +16,19 @@
         "warrendresumec5d3feda": {
           "deploymentBucketName": "amplify-amplify0e1395ab3cd94-staging-4fd23-deployment",
           "s3Key": "amplify-builds/warrendresumec5d3feda-4b563672303461363044-build.zip"
+        },
+        "warrendresumed7a303db": {
+          "deploymentBucketName": "amplify-amplify0e1395ab3cd94-staging-4fd23-deployment",
+          "s3Key": "amplify-builds/warrendresumed7a303db-397a7a496759504b4854-build.zip"
+        },
+        "postsapiTriggerd0267d10": {
+          "deploymentBucketName": "amplify-amplify0e1395ab3cd94-staging-4fd23-deployment",
+          "s3Key": "amplify-builds/postsapiTriggerd0267d10-466e595631535133752b-build.zip"
         }
       },
       "storage": {
-        "items": {}
+        "items": {},
+        "postsapi": {}
       },
       "api": {
         "warrendrest": {}

@@ -1,0 +1,12 @@
+{
+  "resourceName": "postsapi",
+  "tableName": "postsapi",
+  "partitionKey": {
+    "fieldName": "id",
+    "fieldType": "string"
+  },
+  "gsi": [],
+  "triggerFunctions": [
+    "postsapiTriggerd0267d10"
+  ]
+}

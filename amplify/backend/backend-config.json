@@ -9,6 +9,14 @@
           ],
           "category": "function",
           "resourceName": "warrendresumec5d3feda"
+        },
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "warrendresumed7a303db"
         }
       ],
       "providerPlugin": "awscloudformation",
@@ -16,6 +24,22 @@
     }
   },
   "function": {
+    "postsapiTriggerd0267d10": {
+      "build": true,
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn",
+            "StreamArn"
+          ],
+          "category": "storage",
+          "resourceName": "postsapi"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
     "warrendresumec5d3feda": {
       "build": true,
       "dependsOn": [
@@ -34,9 +58,44 @@
       ],
       "providerPlugin": "awscloudformation",
       "service": "Lambda"
+    },
+    "warrendresumed7a303db": {
+      "build": true,
+      "dependsOn": [
+        {
+          "attributeEnvMap": {
+            "Arn": "TABLE_ARN",
+            "Name": "TABLE_NAME"
+          },
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "storage",
+          "resourceName": "postsapi"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
     }
   },
   "parameters": {
+    "AMPLIFY_function_postsapiTriggerd0267d10_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "postsapiTriggerd0267d10"
+        }
+      ]
+    },
+    "AMPLIFY_function_postsapiTriggerd0267d10_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "postsapiTriggerd0267d10"
+        }
+      ]
+    },
     "AMPLIFY_function_warrendresumec5d3feda_deploymentBucketName": {
       "usedBy": [
         {
@@ -52,10 +111,30 @@
           "resourceName": "warrendresumec5d3feda"
         }
       ]
+    },
+    "AMPLIFY_function_warrendresumed7a303db_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "warrendresumed7a303db"
+        }
+      ]
+    },
+    "AMPLIFY_function_warrendresumed7a303db_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "warrendresumed7a303db"
+        }
+      ]
     }
   },
   "storage": {
     "items": {
+      "providerPlugin": "awscloudformation",
+      "service": "DynamoDB"
+    },
+    "postsapi": {
       "providerPlugin": "awscloudformation",
       "service": "DynamoDB"
     }
