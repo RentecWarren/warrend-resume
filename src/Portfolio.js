@@ -1,4 +1,4 @@
-const Home = () => {
+const Portfolio = () => {
   return ( 
     <div className="resume-viewer">
       <img alt ='' src='./resume_page1.png' />
@@ -6,4 +6,5 @@ const Home = () => {
    );
 }
  
-export default Home;
+export default Portfolio;
+
