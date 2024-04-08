@@ -1,0 +1,63 @@
+{
+  "api": {
+    "warrendrest": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "warrendresumec5d3feda"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    }
+  },
+  "function": {
+    "warrendresumec5d3feda": {
+      "build": true,
+      "dependsOn": [
+        {
+          "attributeEnvMap": {
+            "Arn": "TABLE_ARN",
+            "Name": "TABLE_NAME"
+          },
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "storage",
+          "resourceName": "items"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_warrendresumec5d3feda_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "warrendresumec5d3feda"
+        }
+      ]
+    },
+    "AMPLIFY_function_warrendresumec5d3feda_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "warrendresumec5d3feda"
+        }
+      ]
+    }
+  },
+  "storage": {
+    "items": {
+      "providerPlugin": "awscloudformation",
+      "service": "DynamoDB"
+    }
+  }
+}

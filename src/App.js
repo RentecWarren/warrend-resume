@@ -4,6 +4,7 @@ import Navbar from './Navbar';
 import Home from './Home';
 import Portfolio from './Portfolio';
 import NotFound from './NotFound';
+import Create from './Create';
 
 function App() {
   return (
@@ -17,6 +18,9 @@ function App() {
               </Route>
               <Route path="/portfolio">
                 <Portfolio />
+              </Route>
+              <Route path="/create">
+                <Create />
               </Route>
               <Route path="*">
                 <NotFound />

@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "paths": {
+    "/items": {
+      "name": "/items",
+      "lambdaFunction": "warrendresumec5d3feda",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}
