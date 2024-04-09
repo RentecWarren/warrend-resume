@@ -1,8 +1,11 @@
+import PortfolioNav from "./PortfolioNav";
 
 const Portfolio = () => {
 
   return (  
-    <div className="portfolio">Portfolio</div>
+    <div className="portfolio">
+      <PortfolioNav />      
+    </div>
   );
 }
  
