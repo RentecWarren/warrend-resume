@@ -8,11 +8,15 @@ const Create = () => {
   const [isPending, setIsPending] = useState(false);
   // const history = useHistory();
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  const uuid = () => {
     const timestamp = Date.now();
     const randomHex = Math.random().toString(16).slice(2);
-    const id = timestamp.toString(16) + randomHex.replace(/(.{8})/g, "$1-") + "-4";
+    return timestamp.toString(16) + randomHex.replace(/(.{8})/g, "$1-") + "-4";    
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const id = uuid();
 
     const submitMessage = { id, title, message};
 

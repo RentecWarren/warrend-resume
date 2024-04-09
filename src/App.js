@@ -5,6 +5,7 @@ import Home from './Home';
 import Portfolio from './Portfolio';
 import NotFound from './NotFound';
 import Create from './Create';
+import Messages from './Messages';
 
 function App() {
   return (
@@ -18,6 +19,9 @@ function App() {
               </Route>
               <Route path="/portfolio">
                 <Portfolio />
+              </Route>
+              <Route exact path="/messages/">
+                <Messages />
               </Route>
               <Route path="/create">
                 <Create />
