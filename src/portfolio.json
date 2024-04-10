@@ -46,7 +46,7 @@
         "anchor": "nosql",
         "project": "Resume Website",
         "companies": "Self",
-        "companyLink": null,
+        "companyLink": "https://master.dt5t9qw4dxtsj.amplifyapp.com/",
         "description1": "This site is a React SPA that uses AWS Lambda functions to read and write to a DynamoDB",
         "workflow": null,
         "id": "5"
