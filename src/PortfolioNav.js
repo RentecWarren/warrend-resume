@@ -3,10 +3,11 @@ const PortfolioNav = () => {
 
   return (  
     <div className="portfolio-nav">
-      <a href="#pythonContent">Python</a>
-      <a href="#phpContent">PHP</a>
-      <a href="#reactContent">React</a>
-      <a href="#dotNetContent">.NET</a>
+      <a href="#python">Python</a>
+      <a href="#php">PHP</a>
+      <a href="#react">React</a>
+      <a href="#dotNet">.NET</a>
+      <a href="#nosql">nosql</a>
     </div>
   );
 }

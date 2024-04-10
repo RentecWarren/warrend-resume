@@ -1,20 +1,55 @@
 {
-    "languages": [
+    "portfolios": [
       {
-        "name": "Python, .NET",
+        "name": "Python",
+        "anchor": "python",
         "project": "Content Form Tool",
         "companies": "Avalara",
-        "description": "",
-        "workflow": "mario",
+        "companyLink": "https://www.avalara.com/us/en/products/beverage-alcohol.html",
+        "description1": "The CFT has been in production for over two years. It saves 20+ hours of engineering time every 2 weeks, and has changed little beyond the original POC, aside from moving it to its own repository. I spearheaded a greenfield project to develop the CFT and the process surrounding it.",
+        "description2": "eCompli automates Returns filings each month, quarter, and year. This requires stakeholders from a department we call Content to provide the most current State and Federal regulatory pdfs so they may be applied within eCompli. The need for the CFT was apparent from the moment I began working at Avalara. Each time one of these documents needed to be updated, it took engineering time to review the Jira ticket for the necessary work, size the work, and work and test the ticket. A significant portion of these updates only involve changes to text in the pdf, rather than changes to form inputs and/or tax calculations. For these types of changes, Python and C# now automates this process by simply destructuring the old pdf and the new pdf, comparing their form components, and producing a report if changes are detected.",
+        "workflow": "cft.png",
         "id": "1"
       },
       {
         "name": "PHP",
+        "anchor": "php",
         "project": "eCompli",
         "companies": "Avalara",
-        "description": "",
-        "workflow": "mario",
-        "id": "1"
+        "companyLink": "https://www.avalara.com/us/en/products/beverage-alcohol.html",
+        "description1": "eCompli is a Laravel application that is over 20 years old. Being one of two engineers that maintained it, much of the work involved removing tech debt, writing APIs for Javascript UI rewrites, and performing updates critical to security and integration with Avalara's core product, Avatax.",
+        "workflow": null,
+        "id": "2"
+      },
+      {
+        "name": "React",
+        "anchor": "react",
+        "project": "Customer Portal re-write",
+        "companies": "Avalara",
+        "companyLink": "https://www.avalara.com/us/en/products/beverage-alcohol.html",
+        "description1": "The portal for customers to directly interact with eCompli had to be re-written in React, including a PHP API. There were also components of the Admin portions of eCompli that were re-written in React.",
+        "workflow": null,
+        "id": "3"
+      },
+      {
+        "name": ".NET",
+        "anchor": "dotNet",
+        "project": "Content Form Tool",
+        "companies": "Avalara",
+        "companyLink": "https://www.avalara.com/us/en/products/beverage-alcohol.html",
+        "description1": "Though the CFT, described above, is written in Python, it also includes Xfinium, a .NET library to dump pdf fields to an XML file.",
+        "workflow": null,
+        "id": "4"
+      },
+      {
+        "name": "React, Lambda, nosql",
+        "anchor": "nosql",
+        "project": "Resume Website",
+        "companies": "Self",
+        "companyLink": null,
+        "description1": "This site is a React SPA that uses AWS Lambda functions to read and write to a DynamoDB",
+        "workflow": null,
+        "id": "5"
       }
     ]
   }
